@@ -1,24 +1,18 @@
-# README
+items api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+localhost:3001/items
+get '/items', => items controller #index => get a list of items 
+localhost:3001/items/1
+get '/items/:id', => items controller #show => get one item
 
-Things you may want to cover:
 
-* Ruby version
+localhost:3001/items/
 
-* System dependencies
+post '/items' *client needs to send item data => items controller#create method => creates item
 
-* Configuration
+localhost:3001/items/1
+put '/items/:id' *need to send item data => items controller #update => update an item 
 
-* Database creation
+ 
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
