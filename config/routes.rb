@@ -11,7 +11,7 @@ namespace :api do
 
 
   get '/items', to: 'items#index'
-  
+  get '/items/:id', to: 'items#show'
 end
 
 
