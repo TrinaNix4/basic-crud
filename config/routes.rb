@@ -5,9 +5,14 @@ Rails.application.routes.draw do
   # root "articles#index"
 
 namespace :api do 
-  resources :items
-  resources :tacos
-  resources :cars 
+  # resources :items
+  # resources :tacos
+  # resources :cars 
+
+
+  get '/items', to: 'items#index'
+  
 end
+
 
 end
